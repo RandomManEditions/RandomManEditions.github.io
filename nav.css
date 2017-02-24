@@ -1,0 +1,122 @@
+/*at smaller screen*/
+@media (max-width: 766px) { 
+	/*stack vertically*/
+    #navigation{
+        position: static; 
+    }
+    /*center and change size fo the logo photo*/
+    .logo{
+    	display:block;
+  		margin-left:auto;
+  		margin-right:auto;
+  		max-width: 20%;
+    }
+    #navLinks{
+        text-align: center;
+    }
+    #navLinks li{
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+/*at larger screen size */
+@media (min-width: 766px) { 
+	/*limtit the width so its contained in col*/
+    #navigation{
+        max-width: 15%; 
+    }
+    /*appropriate size for logo phot*/
+    .logo{
+  		max-width: 80%;
+  	}
+    #navLinks li{
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+}
+
+/*no bullets and padding lines it on left*/
+#navLinks{
+	list-style-type: none;
+	padding: 10px;
+}
+
+.blackNav{ 
+    color: black;
+}
+
+
+
+
+
+/*
+its collapsing to the left for some reason
+p{
+	/*text-align: center;
+
+}
+/*at smaller screen size stack
+@media (max-width: 767px) { 
+    #navigation{
+        position: static; 
+    }
+}
+/*at larger screen size limtit the width so its contained in col*
+@media (min-width: 767px) { 
+    #navigation{
+        max-width: 15%; 
+    }
+}
+.content{
+	/*text-align: center;*
+}
+
+.holding{
+	position: relative;
+}
+*/
+
+
+
+
+/*
+@media (min-width: 767px) { 
+    #navigation{
+        position: fixed; 
+    }
+}
+p{
+	text-align: center;
+}
+*/
+/*
+
+
+AAA
+.sidenav{
+	text-align: center;
+}
+@media (min-width: 767px) { 
+    #navigation{
+        position: fixed; 
+    }
+    .navContent{
+    	text-align: center;
+    	left:50%;
+    }
+}
+.main-content{
+  text-align: center;
+}
+p{
+	text-align: center;
+}
+img{
+
+}
+*/
+
+

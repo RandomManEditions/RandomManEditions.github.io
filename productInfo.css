@@ -1,0 +1,68 @@
+#mainImage{
+	max-width: 100%;
+}
+.smallImage{
+	max-width: 30%;
+	cursor: pointer;
+}
+/*
+.title{
+	text-align: center;
+}
+*/
+.rightArrow{
+	color: black;
+	font-size: 70px;
+	padding: 10px;
+	float: right;
+}
+.leftArrow{
+	color: black;
+	font-size: 70px;
+	padding: 10px;
+}
+.rightArrow:hover{
+    text-decoration: none;
+}
+.leftArrow:hover{
+    text-decoration: none;
+}
+
+
+/*when mobile is vertical, stack images over description*/
+@media (max-width: 450px) { 
+	
+	.imageGroup{
+        display: block; 
+        float: none; 
+        width: 100%;
+	}
+	.productDetails{
+        display: block; 
+        float: none; 
+        width: 100%;
+	}
+	
+}
+/*and skinnier on wider screens*/
+@media (min-width: 766px) { 
+	/*
+	.leftArrow{
+		width: 10%;
+	}
+	.rightArrow{
+		width: 10%;
+	}
+	*/
+}
+.cartButtons{
+	text-align: center;
+}
+.formatChoice{
+	padding-right: 5px;
+
+}
+#addToCart{
+	padding-left: 5px;
+}
+

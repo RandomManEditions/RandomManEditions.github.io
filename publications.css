@@ -1,0 +1,139 @@
+img{
+	max-width: 100%;
+}
+
+/*bring up title and darken image on non mobile*/
+@media (min-width: 766px) { 
+/*make backround black so that when ake image opaque it darkens. Doesnt display without in-line block*/
+  a.darken{
+    background: black;
+    position: relative;
+    display: inline-block;
+  }
+
+
+  /*specify the transition time and what is transitioning*/
+  a.darken img{
+    display: block;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -ms-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+  }
+
+  /*change opacity on hover*/
+  a.darken:hover img{
+    opacity: 0.5;
+  }
+
+  /*teh text of the title*/
+  a.darken span{
+    color: white;
+    position: absolute;
+    width: 100%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  /*
+    left: 0;
+    top: 50%;
+    text-align: center;
+    */
+
+    opacity: 0;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -ms-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+  }
+
+  /*make visible when hover over anchor*/
+  a.darken:hover span{
+    opacity: 1;
+  }
+
+  a.darken h1{
+
+  }
+}
+
+/*on mobile dont darkne images and hide the titel*/
+@media (max-width: 766px) { 
+  a.darken span{
+    display: none;
+  }
+}
+/*
+a:visited{
+  color: inherit;
+
+}
+*/
+
+
+
+/*
+.box{
+	width: 200px;
+    background: url(https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/15111058_10210006973503725_8099396205072489522_o.jpg?oh=4e682354dece0f37d6ef9b373fae0efd&oe=592DC045);
+  	background-size: cover;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+
+/*
+a.darken {
+    display: inline-block;
+    background: black;
+    padding: 0;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;
+            
+}
+*/
+
+/*
+#box    {  
+	max-width:100%;
+    background:url(images/ShawarmaChameleon/COVER1b034.jpg);
+  	background-size:cover;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+#overlay    {  background:rgba(0,0,0,.75);
+               text-align:center;
+               opacity:0;
+               -webkit-transition: opacity .25s ease;
+-moz-transition: opacity .25s ease;}
+
+#box:hover #overlay {
+    opacity:1;
+}
+
+#plus{  
+	font-family:Helvetica;
+    font-weight:900;
+    color:rgba(255,255,255,.85);
+    font-size:96px;}
+  */
+
+
+

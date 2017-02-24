@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  	<title>Savory Selections</title>
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	  	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    	<link rel="stylesheet" type="text/css" href="nav.css">
+    	<link rel="stylesheet" type="text/css" href="productInfo.css">
+
+    	
+	  	<script type="text/javascript">
+	    $(document).ready(function(){
+	        $("#menu").load('navbar.html');
+	    });
+		</script>
+		<script src="swapImage.js"></script>
+  	</head>
+  	<body>
+		<!--put in navigation menu-->
+		<div class="container-fluid">
+			<div class="row">
+
+				<!--this col is the menu-->
+				<div class="col-sm-2">
+					<div id="menu"> </div>
+				</div>
+
+				<!--this col is the content-->
+				<div class="col-sm-10"> 
+					<!--<h1 class="title">Savory Selections VHS / DVD</h1>-->
+
+					<!--left right button-->
+					<div class="row" style="padding-right: 10px;">
+						<a href="ShawarmaChameleon.html" class="leftArrow">&larr;</a>
+					</div>
+
+					<!--images-->
+					<div class="row">
+						<div class="col-xs-5 imageGroup">
+							<!--maybe make this a holder taht get swapped when smaller once are clicked or hovered-->
+							<img id="mainImage" src="images/SavorySelections/DVD/DVD_front.png">
+							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/DVD/DVD_front.png">
+							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/DVD/DVD_back.png">
+							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/DVD/DVD_open.png">
+							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/VHS/VHS_front.png">
+							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/VHS/VHS_back.png">
+							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/VHS/VHS_open.png">
+						</div>
+
+						<!--info-->
+						<div class="col-xs-7 productDetails">
+							<h4><b>Savory Selections</b> is a video art compilation curated by Michael Jensen and released by Random Man™</h4>
+							<br/>
+							<h4>Featuring:</h4>
+							<ul class="artists">
+								<li>Melissa Brown</li> 
+								<li>Jacob Ciocci</li>
+								<li>Char Esme</li>
+								<li>Wednesday Kim</li>
+								<li>Nick Lane</li>
+								<li>Amy Lockhart</li>
+								<li>Daniel Luedtke</li>
+								<li>Ben Mendelewicz</li>
+								<li>Peter Millard</li>
+								<li>Nino Mora</li>
+								<li>Michael O’Dell</li>
+								<li>Ivo Stoop</li>
+								<li>Devin Tamiazzo</li>
+								<li>Echo Theohar</li>
+								<li>Ray Ting</li>
+							</ul>
+							<h5>Available on VHS and DVD in limited quantity. </h5>
+							<h5>Runtime: 52 minutes</h5>
+
+							<!--cart buttons-->
+							<div class="cartButtons">
+								<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="QEVC9FN67J9B2">
+									<input type="hidden" name="on0" value="Format">
+									<select class="formatChoice" name="os0">
+										<option value="VHS">VHS $20.00 USD</option>
+										<option value="DVD">DVD $15.00 USD</option>
+									</select> 											
+									<input type="hidden" name="currency_code" value="USD">
+									<!--<input id="addToCart" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">-->
+									<input type="submit" value="Add To Cart" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>
