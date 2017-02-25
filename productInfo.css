@@ -1,3 +1,4 @@
+/*atandard gallery*/
 #mainImage{
 	max-width: 100%;
 }
@@ -10,6 +11,30 @@
 	text-align: center;
 }
 */
+
+/*carousel (mobile vertical gallery)*/
+.verticalMobileGallery{
+	display: none; /*default dont display unless smaller screen*/
+}
+.carousel-control.left, .carousel-control.right {
+   	background-image: none;
+    opacity: 1 !important;
+    color: black;
+}
+.carousel-indicators li{
+	background-color: #777;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #777;
+}
+.carousel-indicators .active{
+	background-color: #333;
+	width: 5px;
+	height: 5px;
+	border: 1px solid #333;
+}
+
+/*arrow navs*/
 .rightArrow{
 	color: black;
 	font-size: 70px;
@@ -29,19 +54,32 @@
 }
 
 
-/*when mobile is vertical, stack images over description*/
-@media (max-width: 450px) { 
-	
+/*when mobile is vertical, stack images over description and use carousel*/
+@media (max-width: 450px) { 	
 	.imageGroup{
+		/*make image group block to stack*/
         display: block; 
         float: none; 
         width: 100%;
 	}
+	/*make product details block to stack*/
 	.productDetails{
         display: block; 
         float: none; 
         width: 100%;
 	}
+
+	/*display the carousel*/
+	.verticalMobileGallery{
+		display: block;
+		float: none; 
+        width: 100%;
+	}
+	/*remove the non mobile gallery*/
+	.standardGallery{
+		display: none;
+	}
+
 	
 }
 /*and skinnier on wider screens*/
@@ -55,6 +93,8 @@
 	}
 	*/
 }
+
+
 .cartButtons{
 	text-align: center;
 }
@@ -65,4 +105,7 @@
 #addToCart{
 	padding-left: 5px;
 }
+
+
+
 
