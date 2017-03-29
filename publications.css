@@ -1,9 +1,12 @@
+/*ensure that miages are block and dont overflow*/
 img{
 	max-width: 100%;
   display: block;
   margin: auto;
 }
 
+
+/*//////darken//////*/
 /*bring up title and darken image on non mobile*/
 @media (min-width: 766px) { 
 /*make backround black so that when ake image opaque it darkens. Doesnt display without in-line block*/
@@ -12,7 +15,6 @@ img{
     position: relative;
     display: inline-block;
   }
-
 
   /*specify the transition time and what is transitioning*/
   a.darken img{
@@ -72,9 +74,7 @@ img{
 
 
 
-
-
-/*images*/
+/*////////specific images//////////*/
 .bugsPhoto{
   max-width: 75%;
 }
@@ -87,19 +87,25 @@ img{
 
 
 
-/*titles*/
+/*//////titles///////*/
+/*font*/
+/*
 h1{
   font-family: "Helvetica Inserat", sans-serif
 }
+*/
+/*tile font, size, margins*/
 .productTitle{
-  font-size: 3vw;
+  font-family: "Helvetica Inserat", sans-serif;
+  font-size: 2vw;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-
-
+/*center and put a little space above images*/
 .productContainer{
   text-align: center;
+  margin-top: 2%;
 }
 /*
 a:visited{

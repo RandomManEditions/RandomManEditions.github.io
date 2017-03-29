@@ -1,8 +1,9 @@
+/*font*/
 .menu{
-    font-family: "Helvetica Inserat", sans-serif
+    font-family: "Helvetica Inserat", sans-serif;
 }
 
-/*at smaller screen*/
+/*//////at smaller screen///////*/
 @media (max-width: 766px) { 
 	/*stack vertically*/
     #navigation{
@@ -26,7 +27,7 @@
 
 }
 
-/*at larger screen size */
+/*//////at larger screen size////////*/
 @media (min-width: 766px) { 
 	/*limtit the width so its contained in col*/
     #navigation{
@@ -42,24 +43,35 @@
     }
 }
 
+/*///////Links///////*/
 /*no bullets and padding lines it on left*/
 #navLinks{
 	list-style-type: none;
 	padding: 10px;
 }
-
+/*make sure links are black and not default blue*/
 .blackNav{ 
     color: black;
 }
+/*make sure that the links dont change on hover*/
 .blackNav:hover{
     text-decoration: none;
     color: black;
 }
 
 
+/*///////View cart///////*/
+/*vmakes view cart button just text*/
+#viewCartButton{
+    border: none;
+    padding: 0px;
+    background-color: white;
+}
 
-
-
+/*keep view cart button inline*/
+form{
+    display: inline;
+}
 /*
 its collapsing to the left for some reason
 p{
