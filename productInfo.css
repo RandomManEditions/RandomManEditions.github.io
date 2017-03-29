@@ -38,13 +38,14 @@
 .rightArrow{
 	color: black;
 	font-size: 70px;
-	padding: 10px;
+	/*padding: 10px;*/
 	float: right;
+	/*left: 90%;*/
 }
 .leftArrow{
 	color: black;
 	font-size: 70px;
-	padding: 10px;
+	/*padding: 10px;*/
 }
 .rightArrow:hover{
     text-decoration: none;
@@ -53,6 +54,11 @@
     text-decoration: none;
 }
 
+
+/*description*/
+.centeredText{
+	text-align: center;
+}
 
 /*when mobile is vertical, stack images over description and use carousel*/
 @media (max-width: 450px) { 	
@@ -106,6 +112,16 @@
 	padding-left: 5px;
 }
 
+h4{
+	font-size: 2vw;
+}
+
+
+/*site specific*/
+/*Bugs*/
+.bugsInfo{
+	font-size: 1.5vw;
+}
 
 
 

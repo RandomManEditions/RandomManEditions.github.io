@@ -1,5 +1,7 @@
 img{
 	max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 /*bring up title and darken image on non mobile*/
@@ -66,6 +68,38 @@ img{
   a.darken span{
     display: none;
   }
+}
+
+
+
+
+
+/*images*/
+.bugsPhoto{
+  max-width: 75%;
+}
+.savorySelectionsPhoto{
+  max-width: 75%;
+}
+.superHead{
+  max-width:91%;
+}
+
+
+
+/*titles*/
+h1{
+  font-family: "Helvetica Inserat", sans-serif
+}
+.productTitle{
+  font-size: 3vw;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.productContainer{
+  text-align: center;
 }
 /*
 a:visited{
