@@ -1,12 +1,29 @@
 /*at smaller screen*/
 @media (max-width: 766px) {
 	.aboutText{
-		padding-top: 20px;
+		margin-top: 20px;
 	} 
 }
+
 /*at larger screen size */
 @media (min-width: 766px) { 
 	.aboutText{
-		padding-top: 200px;
+		margin-top: 15vh;
 	}
+}
+
+
+.friendsList{
+	list-style-type: none;
+	padding-left: 0px;
+}
+.friendsList li{
+	margin-bottom: 10px;
+}
+.friendsList li a{
+	/*color: black;*/
+	/*text-decoration: none;*/
+}
+h5{
+	margin-top: 20px;
 }

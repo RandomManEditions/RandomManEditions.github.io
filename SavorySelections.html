@@ -18,13 +18,13 @@
     	<link rel="stylesheet" type="text/css" href="nav.css">
     	<link rel="stylesheet" type="text/css" href="productInfo.css">
 
-    	
+    	<script src="arrows.js"></script>
+    	<script src="swapImage.js"></script>
 	  	<script type="text/javascript">
 	    $(document).ready(function(){
 	        $("#menu").load('navbar.html');
 	    });
 		</script>
-		<script src="swapImage.js"></script>
   	</head>
   	<body>
 		<!--put in navigation menu-->
@@ -42,23 +42,36 @@
 
 					<!--left right button-->
 					<div class="row">
-						<a href="SuperHead.html" class="leftArrow">&larr;</a>
-						<a href="ShawarmaChameleon.html" class="rightArrow">&rarr;</a>
+						<a href="SuperHead.html" id="leftArrow">&larr;</a>
+						<a href="ShawarmaChameleon.html" id="rightArrow">&rarr;</a>
 					</div>
 
 					<!--images-->
 					<div class="row">
+
+						<!--hidden cropped images to  be swapped into main image-->
+						<div class="hiddenImages">
+							<img id="DVDFront" src="images/SavorySelections/DVD/DVD_front_Cropped.jpg">
+							<img id="DVDBack" src="images/SavorySelections/DVD/DVD_back_Cropped.jpg">
+							<img id="DVDOpen" src="images/SavorySelections/DVD/DVD_open_Cropped.jpg">
+							<img id="VHSFront" src="images/SavorySelections/VHS/VHS_front_Cropped.jpg">
+							<img id="VHSBack" src="images/SavorySelections/VHS/VHS_back_Cropped.jpg">
+							<img id="VHSOpen" src="images/SavorySelections/VHS/VHS_open_Cropped.jpg">
+						</div>
+
 						<!-- on computer-->
 						<div class="col-xs-5 imageGroup standardGallery">
 							<!--images-->
-							<img id="mainImage" src="images/SavorySelections/DVD/DVD_front.png">
-							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/DVD/DVD_front.png">
-							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/DVD/DVD_back.png">
-							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/DVD/DVD_open.png">
-							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/VHS/VHS_front_Cropped.png">
-							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/VHS/VHS_back.png">
-							<img onClick="swapImage(this)" onmouseover="swapImage(this)" class="smallImage" src="images/SavorySelections/VHS/VHS_open.png">
+							<img id="mainImage" src="images/SavorySelections/DVD/DVD_front_Cropped.jpg">
+
+							<img onClick="swapImage('DVDFront')" onmouseover="swapImage('DVDFront')" class="smallImage" src="images/SavorySelections/DVD/DVD_front.jpg">
+							<img onClick="swapImage('DVDBack')" onmouseover="swapImage('DVDBack')" class="smallImage" src="images/SavorySelections/DVD/DVD_back.jpg">
+							<img onClick="swapImage('DVDOpen')" onmouseover="swapImage('DVDOpen')" class="smallImage" src="images/SavorySelections/DVD/DVD_open.jpg">
+							<img onClick="swapImage('VHSFront')" onmouseover="swapImage('VHSFront')" class="smallImage" src="images/SavorySelections/VHS/VHS_front.jpg">
+							<img onClick="swapImage('VHSBack')" onmouseover="swapImage('VHSBack')" class="smallImage" src="images/SavorySelections/VHS/VHS_back.jpg">
+							<img onClick="swapImage('VHSOpen')" onmouseover="swapImage('VHSOpen')" class="smallImage" src="images/SavorySelections/VHS/VHS_open.jpg">
 						</div>
+
 
 						<!-- carousel for vertical mobile phones-->
 						<div class="col-xs-5 verticalMobileGallery">
@@ -78,27 +91,27 @@
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner" role="listbox">
 							    <div class="item active">
-							      <img src="images/SavorySelections/DVD/DVD_front.png" alt="DVD Front">
+							      <img src="images/SavorySelections/DVD/DVD_front.jpg" alt="DVD Front">
 							    </div>
 
 							    <div class="item">
-							      <img src="images/SavorySelections/DVD/DVD_back.png" alt="DVD back">
+							      <img src="images/SavorySelections/DVD/DVD_back.jpg" alt="DVD back">
 							    </div>
 
 							    <div class="item">
-							      <img src="images/SavorySelections/DVD/DVD_open.png" alt="DVD open">
+							      <img src="images/SavorySelections/DVD/DVD_open.jpg" alt="DVD open">
 							    </div>
 
 							    <div class="item">
-							      <img src="images/SavorySelections/VHS/VHS_front.png" alt="VHS Front">
+							      <img src="images/SavorySelections/VHS/VHS_front.jpg" alt="VHS Front">
 							    </div>
 
 							    <div class="item">
-							      <img src="images/SavorySelections/VHS/VHS_back.png" alt="VHS back">
+							      <img src="images/SavorySelections/VHS/VHS_back.jpg" alt="VHS back">
 							    </div>
 
 							    <div class="item">
-							      <img src="images/SavorySelections/VHS/VHS_open.png" alt="VHS Open">
+							      <img src="images/SavorySelections/VHS/VHS_open.jpg" alt="VHS Open">
 							    </div>
 							  </div>
 

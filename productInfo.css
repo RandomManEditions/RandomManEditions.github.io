@@ -1,10 +1,16 @@
 /*///////standard gallery///////*/
 #mainImage{
-	max-width: 100%;
+	max-width: 75%;
+	display: block;
+    margin: auto;
 }
 .smallImage{
-	max-width: 32%;
+	max-width: 30%;
 	cursor: pointer;
+}
+
+.hiddenImages{
+	display: none;
 }
 /*
 .title{
@@ -35,22 +41,22 @@
 }
 
 /*////////arrow navs///////////*/
-.rightArrow{
+#rightArrow{
 	color: black;
 	font-size: 70px;
 	/*padding: 10px;*/
 	float: right;
 	/*left: 90%;*/
 }
-.leftArrow{
+#leftArrow{
 	color: black;
 	font-size: 70px;
 	/*padding: 10px;*/
 }
-.rightArrow:hover{
+#rightArrow:hover{
     text-decoration: none;
 }
-.leftArrow:hover{
+#leftArrow:hover{
     text-decoration: none;
 }
 
