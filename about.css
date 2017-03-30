@@ -1,5 +1,8 @@
 /*at smaller screen*/
-@media (max-width: 766px) { 
+@media (max-width: 766px) {
+	.aboutText{
+		padding-top: 20px;
+	} 
 }
 /*at larger screen size */
 @media (min-width: 766px) { 

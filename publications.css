@@ -76,13 +76,16 @@ img{
 
 /*////////specific images//////////*/
 .bugsPhoto{
-  max-width: 75%;
+  max-width: 56.25%;
 }
 .savorySelectionsPhoto{
-  max-width: 75%;
+  max-width: 56.25%;
 }
 .superHead{
-  max-width:91%;
+  max-width:68.25%;
+}
+.shawarmaChameleon{
+  max-width: 70%;
 }
 
 
@@ -97,7 +100,8 @@ h1{
 /*tile font, size, margins*/
 .productTitle{
   font-family: "Helvetica Inserat", sans-serif;
-  font-size: 2vw;
+  /*font-size: 2vw;*/
+  font-size: 1.5vw;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 0px;

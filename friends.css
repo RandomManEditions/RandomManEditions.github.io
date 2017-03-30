@@ -1,0 +1,7 @@
+.friendsList{
+	list-style-type: none;
+}
+.friendsList li a{
+	color: black;
+	text-decoration: none;
+}
