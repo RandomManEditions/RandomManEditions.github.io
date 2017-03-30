@@ -48,6 +48,8 @@
 #navLinks{
 	list-style-type: none;
 	padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 /*make sure links are black and not default blue*/
 .blackNav{ 

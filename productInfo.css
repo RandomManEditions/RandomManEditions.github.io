@@ -1,9 +1,9 @@
-/*atandard gallery*/
+/*///////standard gallery///////*/
 #mainImage{
 	max-width: 100%;
 }
 .smallImage{
-	max-width: 30%;
+	max-width: 32%;
 	cursor: pointer;
 }
 /*
@@ -12,7 +12,7 @@
 }
 */
 
-/*carousel (mobile vertical gallery)*/
+/*/////////carousel (mobile vertical gallery)//////////////*/
 .verticalMobileGallery{
 	display: none; /*default dont display unless smaller screen*/
 }
@@ -34,7 +34,7 @@
 	border: 1px solid #333;
 }
 
-/*arrow navs*/
+/*////////arrow navs///////////*/
 .rightArrow{
 	color: black;
 	font-size: 70px;
