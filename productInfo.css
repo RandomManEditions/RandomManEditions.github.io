@@ -12,15 +12,13 @@
 .hiddenImages{
 	display: none;
 }
-/*
-.title{
-	text-align: center;
-}
-*/
+
 
 /*/////////carousel (mobile vertical gallery)//////////////*/
+/*default dont display unless smaller screen*/
 .verticalMobileGallery{
-	display: none; /*default dont display unless smaller screen*/
+	display: none; 
+	/**********/margin-top: 0px;/*************/
 }
 .carousel-control.left, .carousel-control.right {
    	background-image: none;
@@ -43,15 +41,12 @@
 /*////////arrow navs///////////*/
 #rightArrow{
 	color: black;
-	font-size: 70px;
-	/*padding: 10px;*/
+	font-size: 40px;
 	float: right;
-	/*left: 90%;*/
 }
 #leftArrow{
 	color: black;
-	font-size: 70px;
-	/*padding: 10px;*/
+	font-size: 40px;
 }
 #rightArrow:hover{
     text-decoration: none;
@@ -62,6 +57,10 @@
 
 
 /*description*/
+.title{
+	margin-top: 0px;
+	/*font-size: 1.3vw;*/
+}
 .centeredText{
 	text-align: center;
 }
@@ -107,24 +106,27 @@
 }
 
 
+/*cart*/
 .cartButtons{
-	text-align: center;
+	/*text-align: center;*/
 }
 .formatChoice{
-	padding-right: 5px;
+	display: block;
+	margin-bottom: 5px;
 
 }
 #addToCart{
 	padding-left: 5px;
 }
-
-h4{
-	font-size: 2vw;
+.price{
+	margin-bottom: 4px;
 }
 
+/*other*/
+.bold{
+	font-weight: bold;
+}
 
-/*site specific*/
-/*Bugs*/
 
 
 

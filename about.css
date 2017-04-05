@@ -6,11 +6,14 @@
 }
 
 /*at larger screen size */
+/*
 @media (min-width: 766px) { 
 	.aboutText{
-		margin-top: 15vh;
+		margin-top: 20px;
 	}
 }
+*/
+
 
 
 .friendsList{

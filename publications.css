@@ -7,16 +7,16 @@ img{
 
 
 /*//////darken//////*/
-/*bring up title and darken image on non mobile*/
+/*bring up title and darken image on non mobile
 @media (min-width: 766px) { 
-/*make backround black so that when ake image opaque it darkens. Doesnt display without in-line block*/
+/*make backround black so that when ake image opaque it darkens. Doesnt display without in-line block
   a.darken{
     background: black;
     position: relative;
     display: inline-block;
   }
 
-  /*specify the transition time and what is transitioning*/
+  /*specify the transition time and what is transitioning
   a.darken img{
     display: block;
     -webkit-transition: opacity 0.5s linear;
@@ -26,12 +26,12 @@ img{
     transition: opacity 0.5s linear;
   }
 
-  /*change opacity on hover*/
+  /*change opacity on hover
   a.darken:hover img{
     opacity: 0.5;
   }
 
-  /*teh text of the title*/
+  /*teh text of the title
   a.darken span{
     color: white;
     position: absolute;
@@ -45,7 +45,7 @@ img{
     left: 0;
     top: 50%;
     text-align: center;
-    */
+    
 
     opacity: 0;
     -webkit-transition: opacity 0.5s linear;
@@ -55,7 +55,7 @@ img{
     transition: opacity 0.5s linear;
   }
 
-  /*make visible when hover over anchor*/
+  /*make visible when hover over anchor
   a.darken:hover span{
     opacity: 1;
   }
@@ -65,12 +65,13 @@ img{
   }
 }
 
-/*on mobile dont darkne images and hide the titel*/
+/*on mobile dont darkne images and hide the titel
 @media (max-width: 766px) { 
   a.darken span{
     display: none;
   }
 }
+*/
 
 
 
@@ -100,8 +101,7 @@ h1{
 /*tile font, size, margins*/
 .productTitle{
   font-family: "Helvetica Inserat", sans-serif;
-  /*font-size: 2vw;*/
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -111,6 +111,8 @@ h1{
   text-align: center;
   margin-top: 2%;
 }
+
+
 /*
 a:visited{
   color: inherit;
