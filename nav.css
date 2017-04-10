@@ -3,8 +3,41 @@
     font-family: "Helvetica Inserat", sans-serif;
 }
 
+.verticalMobileNav{
+    display: none;
+}
+
+/***for vertical mobil***/
+@media (max-width: 450px) {     
+    .verticalMobileNav{
+        display: block;
+    }
+    .standardNav{
+        display: none;
+    }
+
+
+    #navigation{
+        position: static; 
+    }
+    .logo{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        max-width: 20%;
+    }
+    #navLinks{
+        text-align: center;
+    }
+    #navLinks li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 /*//////at smaller screen///////*/
-@media (max-width: 766px) { 
+/*smartphone/tablet landscape*/
+@media (min-width: 451px) and (max-width: 766px) { 
 	/*stack vertically*/
     #navigation{
         position: static; 
@@ -28,7 +61,7 @@
 }
 
 /*//////at larger screen size////////*/
-@media (min-width: 766px) { 
+@media (min-width: 767px) { 
 	/*limtit the width so its contained in col*/
     #navigation{
         max-width: 15%; 
