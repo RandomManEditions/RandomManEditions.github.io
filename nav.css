@@ -39,6 +39,7 @@
 /*smartphone/tablet landscape*/
 @media (min-width: 451px) and (max-width: 766px) { 
 	/*stack vertically*/
+
     #navigation{
         position: static; 
     }
