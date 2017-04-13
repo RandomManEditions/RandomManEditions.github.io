@@ -1,5 +1,4 @@
 $(document).keydown(function(e) {
-  //blcok default (scroll)
 
   //left arrow
   if(e.which == 37){
